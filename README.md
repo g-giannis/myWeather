@@ -12,7 +12,7 @@ MyWeather is a simple app which shows the current, hourly and daily weather cond
 ## Screenshots
 ![Screenshot 1](https://github.com/i-Giannopoulos/myWeather/blob/master/Screenshots/Screenshot_1.PNG)
 ![Screenshot 2](https://github.com/i-Giannopoulos/myWeather/blob/master/Screenshots/Screenshot_2.PNG)
-![Screenshot 3](https://github.com/i-Giannopoulos/myWeather/blob/master/Screenshots/Screenshot_3.PNGng)
+![Screenshot 3](https://github.com/i-Giannopoulos/myWeather/blob/master/Screenshots/Screenshot_3.PNG)
 ![Screenshot 4](https://github.com/i-Giannopoulos/myWeather/blob/master/Screenshots/Screenshot_4.PNG)
 
 ## Contact
