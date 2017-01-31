@@ -12,8 +12,7 @@
 #import "NSString+Extensions.h"
 #import "WeatherResponseItem.h"
 
-// The API Key seems to be optional. Fetch requests are executed even without any API Key.
-#define API_KEY @""
+#define API_KEY @"41ec9da41ac6f354ddbc5658e7fdeb90"
 
 @interface ConnectionManager ()
 {
