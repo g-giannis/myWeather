@@ -79,7 +79,7 @@
    
    // Adjust UITableView header view
    CGRect frame = self.tableView.tableHeaderView.frame;
-   frame.size.height = [UIScreen mainScreen].bounds.size.height * 0.97;
+   frame.size.height = [UIScreen mainScreen].bounds.size.height * 0.91;
    self.tableView.tableHeaderView.frame = frame;
    
    statusBarHidden = NO;
@@ -190,7 +190,7 @@
 - (void)createMainInformationLabel
 {
    mainInformationLabel = [self customLabel];
-   [visualEffectView addSubview:mainInformationLabel];
+   [visualEffectView.contentView addSubview:mainInformationLabel];
    
    // Auto-Layout Constraints
    NSDictionary *metrics = @{@"margin" : @(LEFT_RIGHT_MARGIN)};
@@ -605,6 +605,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    return [[weatherResponseItem dailyWeatherConditionItems] count] + 1;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Not nice fix for subview inside UITableView
+    [self.tableView sendSubviewToBack:visualEffectView];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
